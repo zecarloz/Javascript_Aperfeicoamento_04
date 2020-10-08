@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>mostra idades >= 30</title>
+  </head>
+  <body>
+    <h2>Mostra idade >= 30</h2>
+    <div id="resultado"></div>
+    <script>
+      const usuarios = [
+        { nome: "Caio", idade: 25, empresa: "Google" },
+        { nome: "Tiago", idade: 35, empresa: "Microsoft" },
+        { nome: "Felipe", idade: 30, empresa: "Apple" },
+      ];
+      //const idades = usuarios.filter(valor=> valor.idade>=30);
+      const idades = usuarios.filter(function (valor) {
+       return valor.idade;
+      });
+      document.getElementById("resultado").innerHTML = idades;
+      console.log("idades maiores que 30 são : " + idades);
+    </script>
+  </body>
+</html>

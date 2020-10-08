@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>mostra idades</title>
+  </head>
+  <body>
+    <h2>As idades são :</h2>
+    <div id="resultado"></div>
+    <script>
+      const usuarios = [
+        { nome: "Caio", idade: 25, empresa: "Google" },
+        { nome: "Tiago", idade: 35, empresa: "Microsoft" },
+        { nome: "Felipe", idade: 30, empresa: "Apple" },
+      ];
+      const idades = usuarios.map(valor=> valor.idade);
+      // const idades = usuarios.map(function (valor) {
+      //  return valor.idade;
+      // });
+      document.getElementById("resultado").innerHTML = idades;
+      console.log("As idades são : " + idades);
+    </script>
+  </body>
+</html>

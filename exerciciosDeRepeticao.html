@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Repetição</title>
+  </head>
+
+  <body>
+    <div id="resultado"></div>
+    <hr />
+    <p id="resul2x"></p>
+    <hr />
+    <p id="resul5x"></p>
+    <div>
+      <p id="resul20x"></p>
+    </div>
+    <hr />
+    <script>
+      document.getElementById("resultado").innerHTML = "Repetição";
+      //==================
+      var repetir2x = ["Repetição", "Repetição"];
+      let text = "";
+      for (let i = 0; i < repetir2x.length; i++) {
+        text += repetir2x[i] + " <br>";
+      }
+      document.getElementById("resul2x").innerHTML = text;
+      //=================
+      repetir5x = [
+        "repetição1 ",
+        "repetição2 ",
+        "repetição3 ",
+        "repetição4 ",
+        "repetição5 ",
+      ];
+      repetir5x.forEach(
+        (nomes) => (document.getElementById("resul5x").innerHTML = repetir5x)
+      );
+      //================
+      for (let repeticao = 0; repeticao <= 20; repeticao++) {
+        document.write(" repeticao ");
+      }
+    </script>
+  </body>
+</html>
