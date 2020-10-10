@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EspecializaçãoJs 4.4.2</title>
+</head>
+<body>
+    <h4>
+        Atraves do metodo filter selecione funcionario que trabalha na Aple com mais de 30 anos
+    </h4>
+    <input type="button" value="Mostrar" onclick="call()" />
+    <ul id="resultado"></ul>
+    <script>
+        const usuarios = [{ nome: "Caio", idade: 25,empresa: "Google", },
+       {nome: "Tiago",idade: 35,empresa: "Microsoft",},
+       { nome: "Felipe",idade: 30,empresa: "Apple"} ];                
+        function call() {
+            let trabalhaApple = usuarios.filter(
+                (usuario) => usuario.idade >= 30 && usuario.empresa === "Apple"
+            );
+            for (var i = 0; i < trabalhaApple.length; i++) {
+                document.getElementById(
+                    "resultado"
+                ).innerHTML = `Nome é ${trabalhaApple[i].nome}, 
+                   tem idade de ${trabalhaApple[i].idade} anos, 
+                   e trabalha na empresa ${trabalhaApple[i].empresa}`;
+            }
+        }
+    </script>
+</body>
+</html>

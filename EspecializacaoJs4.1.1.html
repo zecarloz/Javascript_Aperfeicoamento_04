@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4.1.1</title>    
+</head>
+
+<body>  
+        <h1>Usando o comando innerHTML escreva repetição 2 vezes. </h1>
+        <button onclick="repetir()">Mostrar</button> 
+        <p id='resultado'></p>
+    <script>
+        function repetir() {
+            var result = [];            
+            for (var i = 0; i < 2; i++) {
+                result += "Repetição" + '<br>';
+            }
+            document.getElementById('resultado').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

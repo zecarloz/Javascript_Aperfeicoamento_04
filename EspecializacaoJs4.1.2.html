@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="py-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 4 atividade 1-1</title>    
+</head>
+
+<body>    
+        <h1>Escreva repetição 20 vezes usando comando "for"</h1>
+        <input type="button" value="Mostrar" onclick="repetir()">
+        <p id='resultado'>Será exibido aqui...</p>
+    <script>
+        function repetir() {
+            var result = [];            
+            for (var i = 0; i < 20; i++) {
+                result += "Repetição" + "<br>";
+            }
+            document.getElementById('resultado').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

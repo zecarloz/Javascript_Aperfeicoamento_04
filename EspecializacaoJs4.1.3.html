@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESpecializacao4.1.3</title>
+</head>
+<body>
+    <h1>Escreva Repetição usando forEach)</h1>
+    <input type="button" value="Mostrar" onclick="repetir()">
+    <p id='resultado'></p>
+    <script>
+        function repetir() {
+            let result = [1, 2, 3, 4, 5];
+
+            result.forEach(function (item, index) {
+                if (item === 1) {
+                    result[index] = 'Repetição' + '<br>'
+                } else if (item === 2) {
+                    result[index] = 'Repetição' + '<br>'
+                } else if (item === 3) {
+                    result[index] = 'Repetição' + '<br>'
+                } else if (item === 4) {
+                    result[index] = 'Repetição' + '<br>'
+                } else if (item === 5) {
+                    result[index] = 'Repetição' + '<br>'
+                } 
+            });
+            document.getElementById('resultado').innerHTML = (result)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspecializaçãoJs4.2</title>
+</head>
+
+<body>
+    <h1>02 - Dentro da div com o id 'resultado', escreva os números de 0 ~ 10 (escolha uma das opções utilizado no
+        exercício anterior)</h1>
+    <input type="button" value="Mostrar" onclick="repetir()">
+    <p id='resultado'></p>
+    <script>
+        repetir = () => {
+            let result = ''
+            for (let i = 0; i < 11; i++) {
+                result += [i]
+            }
+            document.getElementById('resultado').innerHTML = (result)
+        }
+    </script>
+</body>
+
+</html>

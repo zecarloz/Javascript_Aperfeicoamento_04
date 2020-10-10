@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EspecializaçãoJs4.4.1</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Utilize metodo map para mostrar as idades dos colaboradores</h1>
+      <input type="button" value="Mostrar" onclick="repetir()" />
+      <p id="resultado"></p>
+    </div>
+    <script>
+      repetir = () => {
+        const usuarios = [
+          { nome: "Caio", idade: 25, empresa: "Google" },
+          { nome: "Tiago", idade: 35, empresa: "Microsoft" },
+          { nome: "Felipe", idade: 30, empresa: "Apple" },
+        ];
+        let idades = usuarios.map((item, index) => {
+          return item.idade;
+        });
+        document.getElementById(
+          "resultado"
+        ).innerHTML = `As idades são :${idades}`;
+      };
+    </script>
+  </body>
+</html>

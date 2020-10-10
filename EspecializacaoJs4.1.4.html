@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspecializaçãoJs4.1.4</title>
+</head>
+
+<body>
+    <h1>Escreva repetição5 vezes com while)</h1>
+    <input type="button" value="Mostrar" onclick="repetir()">
+    <p id='resultado'></p>
+    <script>
+        function repetir() {
+            let result = ''
+            let i = 0
+            while (i < 5) {
+                result += 'Repetição' + '<br>'
+                i++
+            }
+            document.getElementById('resultado').innerHTML = (result)
+        }
+    </script>
+</body>
+
+</html>
