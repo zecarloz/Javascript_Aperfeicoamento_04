@@ -1,4 +1,5 @@
 # Introdução ao estudo de Javascript Es6
+![Logo of the project](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0yX2xtqoB9KMt7XdRI1O2JObFRCUBRXRkig&usqp=CAU)
 
 ### este repositorio tem por objetivos servir de consultas para dúvidas relativas a:
 
